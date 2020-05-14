@@ -23,7 +23,7 @@ function getShoppingList(recipeId) {
 //`getInstructions(recipe_id)`: should return a list of step by step instructions
 //for preparing a recipe
 function getInstructions(recipeId) {
-	return db('steps')
+	return db('recipesteps')
 		.select('*')
 		.where('recipeId', recipeId);
 }
