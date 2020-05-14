@@ -31,7 +31,7 @@ exports.up = function(knex) {
           .references('id')
           .inTable('ingredients');
           tbl.float('measurement').notNullable();
-          tbl.string('measurementType').notNullable();  // t, T, Cup(s)
+          tbl.string('measurementType').notNullable();
           tbl.integer('ingredientOrder')
     })
   };
