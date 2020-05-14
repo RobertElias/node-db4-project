@@ -5,3 +5,8 @@ module.exports = {
 	getShoppingList,
 	getInstructions
 };
+
+// `getRecipes()`: should return a list of all recipes in the database.
+function getRecipes() {
+	return db('recipes').select('*');
+}
