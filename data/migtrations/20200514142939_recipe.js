@@ -16,10 +16,7 @@ exports.up = function(knex) {
               .notNullable()
               .references('id')
               .inTable('recipes');
-          tbl.integer('steporder')
-          .notNullable()
-          .onUpdate('CASCADE')
-          .onDelete('CASCADE');
+          tbl.integer('steporder').notNullable();
     })
     .createTable('recipeingredients', tbl => {
           tbl.increments();
